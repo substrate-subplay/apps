@@ -18,6 +18,13 @@ export function createProduction (t: TFunction): LinkOption[] {
   return expandEndpoints(t, [
     // fixed, polkadot
     {
+      info: 'subplay',
+      text: t('rpc.subplay.network', 'Subplay', { ns: 'apps-config' }),
+      providers: {
+        'Subplay Network': 'wss://rpc.subplay.network'
+      }
+    },
+    {
       dnslink: 'polkadot',
       info: 'polkadot',
       text: t('rpc.polkadot.parity', 'Polkadot', { ns: 'apps-config' }),
