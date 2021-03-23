@@ -21,7 +21,8 @@ export function createProduction (t: TFunction): LinkOption[] {
       info: 'subplay',
       text: t('rpc.subplay.network', 'Subplay', { ns: 'apps-config' }),
       providers: {
-        'Subplay Network': 'wss://rpc.subplay.network'
+        'Subplay.xyz': 'wss://rpc.subplay.xyz',
+        'Subplay.network': 'wss://rpc.subplay.network'
       }
     },
     {
